@@ -1,0 +1,56 @@
+﻿<Window x:Class="Dnd_character_sheet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dnd_character_sheet"
+        mc:Ignorable="d"
+        Title="Dungeons and dragons 5e survival kit" Height="800" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="Backgrounds/DNDImage1.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,-0.4,0" RenderTransformOrigin="0.499,0.553">
+        <TabControl TabStripPlacement="Top">
+            <!--#endregion-->
+            <!--DiceRoller-->
+            <!--#region DiceRoller-->
+            <TabItem Name="DiceRoller" Header="DiceRoller" Width="100">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="736*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Dices\D10.jpg" RenderTransformOrigin="0.468,0.496" Margin="21,22,699,656.4" Grid.ColumnSpan="3"/>
+                    <Image Source="Dices\D12.jpg" Margin="21,118,699,560.4" Grid.ColumnSpan="3"/>
+                    <Image Source="Dices\D20.jpg" RenderTransformOrigin="0.5,0.504" Margin="21,203,699,475.4" Grid.ColumnSpan="3"/>
+                    <Image Source="Dices\D4.jpg" Margin="21,285,707,399.4" Grid.ColumnSpan="3"/>
+                    <Image Source="Dices\D6.png" Margin="21,415,707,271.4" Grid.ColumnSpan="3"/>
+                    <Image Source="Dices\D8.jpg" Margin="21,519,707,164.4" Grid.ColumnSpan="3"/>
+                    <Button Name="RollD10" Content="RollD10" Margin="81.8,26,549,656.4" Click="RollD10_Click" Grid.Column="2"/>
+                    <Button Name="RollD12" Content="RollD12" Height="50" Margin="81.8,118,549,574.4" Click="RollD12_Click" Grid.Column="2"/>
+                    <Button Name="RollD20" Content="RollD20" Height="50" Margin="81.8,203,549,489.4" Click="RollD20_Click" Grid.Column="2"/>
+                    <Button Name="RollD4" Content="RollD4" Height="50" Margin="81.8,293,549,399.4" RenderTransformOrigin="0.501,0.504" Click="RollD4_Click" Grid.Column="2"/>
+                    <Button Name="RollD6" Content="RollD6" Height="50" Margin="81.8,421,549,271.4" Click="RollD6_Click" Grid.Column="2"/>
+                    <Button Name="RollD8" Content="RollD8" Height="50" Margin="81.8,528,549,164.4" Click="RollD8_Click" Grid.Column="2"/>
+                    <TextBlock Name="D10Results" HorizontalAlignment="Left" Margin="283.8,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.523,0.427" Width="59" Grid.Column="2"/>
+                    <TextBlock Name="D12Results" HorizontalAlignment="Left" Margin="283.8,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2"/>
+                    <TextBlock Name="D20Results" HorizontalAlignment="Left" Margin="283.8,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2"/>
+                    <TextBlock Name="D4Results" HorizontalAlignment="Left" Margin="283.8,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2"/>
+                    <TextBlock Name="D6Results" HorizontalAlignment="Left" Margin="283.8,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="78" Grid.Column="2"/>
+                    <TextBlock Name="D8Results" HorizontalAlignment="Left" Margin="283.8,528,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2"/>
+                    <Button Name="CharacterStatRoll" Content="Make Character Stats" Margin="529.8,57,62,616.4" Grid.Column="2" Click="CharacterStatRoll_Click"/>
+                    <TextBlock Text="Make Character:" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="27.652,0.983" Grid.Column="2" Margin="529.8,22,0,0"/>
+                    <TextBlock Name="StrengthStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,155,0,0" Height="48" Width="64"/>
+                    <TextBlock Name="DexStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,254,0,0" Height="48" Width="64"/>
+                    <TextBlock Name="ConstStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,330,0,0" Height="48" Width="64"/>
+                    <TextBlock Name="IntelStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,402,0,0" Height="48" Width="64"/>
+                    <TextBlock Name="WisStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,473,0,0" Height="48" Width="64"/>
+                    <TextBlock Name="ChaStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,530,0,0" Height="48" Width="64"/>
+                </Grid>
+            </TabItem>
+
+            <!--#endregion-->
+        </TabControl>
+    </Grid>
+</Window>

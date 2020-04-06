@@ -1,0 +1,15 @@
+D:\Projects\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.exe.config
+D:\Projects\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.exe
+D:\Projects\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.pdb
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csprojAssemblyReference.cache
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\MainWindow.g.cs
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\App.g.cs
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet_MarkupCompile.cache
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet_MarkupCompile.lref
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\MainWindow.baml
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.g.resources
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd_character_sheet.Properties.Resources.resources
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.GenerateResource.cache
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CoreCompileInputs.cache
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.exe
+D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.pdb
