@@ -33,20 +33,20 @@
                     <Button Name="RollD4" Content="RollD4" Height="50" Margin="81.8,293,549,399.4" RenderTransformOrigin="0.501,0.504" Click="RollD4_Click" Grid.Column="2"/>
                     <Button Name="RollD6" Content="RollD6" Height="50" Margin="81.8,421,549,271.4" Click="RollD6_Click" Grid.Column="2"/>
                     <Button Name="RollD8" Content="RollD8" Height="50" Margin="81.8,528,549,164.4" Click="RollD8_Click" Grid.Column="2"/>
-                    <TextBlock Name="D10Results" HorizontalAlignment="Left" Margin="283.8,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.523,0.427" Width="59" Grid.Column="2"/>
-                    <TextBlock Name="D12Results" HorizontalAlignment="Left" Margin="283.8,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2"/>
-                    <TextBlock Name="D20Results" HorizontalAlignment="Left" Margin="283.8,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2"/>
-                    <TextBlock Name="D4Results" HorizontalAlignment="Left" Margin="283.8,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2"/>
-                    <TextBlock Name="D6Results" HorizontalAlignment="Left" Margin="283.8,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="78" Grid.Column="2"/>
-                    <TextBlock Name="D8Results" HorizontalAlignment="Left" Margin="283.8,528,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2"/>
+                    <TextBlock Name="D10Results" HorizontalAlignment="Left" Margin="283.8,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="54" RenderTransformOrigin="0.523,0.427" Width="59" Grid.Column="2" FontSize="35"/>
+                    <TextBlock Name="D12Results" HorizontalAlignment="Left" Margin="283.8,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2" FontSize="35"/>
+                    <TextBlock Name="D20Results" HorizontalAlignment="Left" Margin="283.8,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="59" Grid.Column="2" FontSize="35"/>
+                    <TextBlock Name="D4Results" HorizontalAlignment="Left" Margin="283.8,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2" FontSize="35"/>
+                    <TextBlock Name="D6Results" HorizontalAlignment="Left" Margin="283.8,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="78" Grid.Column="2" FontSize="35"/>
+                    <TextBlock Name="D8Results" HorizontalAlignment="Left" Margin="283.8,528,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" Height="50" Grid.Column="2" FontSize="35"/>
                     <Button Name="CharacterStatRoll" Content="Make Character Stats" Margin="529.8,57,62,616.4" Grid.Column="2" Click="CharacterStatRoll_Click"/>
-                    <TextBlock Text="Make Character:" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="27.652,0.983" Grid.Column="2" Margin="529.8,22,0,0"/>
-                    <TextBlock Name="StrengthStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,155,0,0" Height="48" Width="64"/>
-                    <TextBlock Name="DexStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,254,0,0" Height="48" Width="64"/>
-                    <TextBlock Name="ConstStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,330,0,0" Height="48" Width="64"/>
-                    <TextBlock Name="IntelStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,402,0,0" Height="48" Width="64"/>
-                    <TextBlock Name="WisStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,473,0,0" Height="48" Width="64"/>
-                    <TextBlock Name="ChaStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,530,0,0" Height="48" Width="64"/>
+                    <TextBlock Text="Make Character:" HorizontalAlignment="Left" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="27.652,0.983" Grid.Column="2" Margin="529.8,22,0,0" />
+                    <TextBlock Name="StrengthStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,155,0,0" Height="48" Width="64" FontSize="35"/>
+                    <TextBlock Name="DexStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,254,0,0" Height="48" Width="64" FontSize="35"/>
+                    <TextBlock Name="ConstStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,330,0,0" Height="48" Width="64" FontSize="35"/>
+                    <TextBlock Name="IntelStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,402,0,0" Height="48" Width="64" FontSize="35"/>
+                    <TextBlock Name="WisStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,473,0,0" Height="48" Width="64" FontSize="35"/>
+                    <TextBlock Name="ChaStat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="4.259,1.246" Grid.Column="2" Margin="570.8,530,0,0" Height="48" Width="64" FontSize="35"/>
                 </Grid>
             </TabItem>
 

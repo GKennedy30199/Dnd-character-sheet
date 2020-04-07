@@ -13,3 +13,18 @@ D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character shee
 D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CoreCompileInputs.cache
 D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.exe
 D:\Projects\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.pdb
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.exe.config
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.exe
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\Dnd character sheet.pdb
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csprojAssemblyReference.cache
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\MainWindow.g.cs
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\App.g.cs
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet_MarkupCompile.cache
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet_MarkupCompile.lref
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\MainWindow.baml
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.g.resources
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd_character_sheet.Properties.Resources.resources
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.GenerateResource.cache
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CoreCompileInputs.cache
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.exe
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.pdb
