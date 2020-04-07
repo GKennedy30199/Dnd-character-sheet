@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes%28OfTheCodeVariety%29\Classes.cs" />
+    <Compile Include="Classes%28OfTheCodeVariety%29\Feat.cs" />
     <Compile Include="Classes%28OfTheCodeVariety%29\Race.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

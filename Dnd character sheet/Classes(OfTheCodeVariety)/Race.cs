@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dnd_character_sheet
 {
-    class Race
+    public class Race
     {
+        public int Id { get; set; }
+        public int AbilityScore { get; set; }
+        public string Alignment { get; set; }
+        public string Feet { get; set; }
+        public int speed { get; set; }
+        public string Languages { get; set; }
     }
 }
