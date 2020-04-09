@@ -42,6 +42,8 @@ namespace Dnd_character_sheet
     {
         public int FeatID { get; set; }
         public int ClassID { get; set; }
+        public int Level { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
     }
     public class DndCharacterData : DbContext
