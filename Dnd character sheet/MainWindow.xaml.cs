@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows;
 using System.Threading.Tasks;
+using Dnd_character_sheet;
+using System.Data;
 namespace Dnd_character_sheet
 {
     /// <summary>
@@ -8,9 +10,11 @@ namespace Dnd_character_sheet
     /// </summary>
     public partial class MainWindow : Window
     {
+        DndCharacterData db = new DndCharacterData();
         
         public MainWindow()
         {
+            
             InitializeComponent();
         }
 
@@ -148,6 +152,26 @@ namespace Dnd_character_sheet
         private void CharacterStatRoll_Click(object sender, RoutedEventArgs e)
         {
             CharacterRoll();
+        }
+        #endregion
+
+        //FeatsList
+        #region Featslist
+        private void Fighter_Click(object sender, RoutedEventArgs e)
+        {
+            //var query = from f in db.Classes
+              //          select f;
+            
+        }
+
+        private void Bard_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Rogue_Click(object sender, RoutedEventArgs e)
+        {
+
         }
         #endregion
     }

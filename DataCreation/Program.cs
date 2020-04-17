@@ -17,7 +17,7 @@ namespace DataCreation
                 #region Races
                 Race R1 = new Race()
                 {
-                    RaceId = 1,
+                    RaceID=1,
                     Name = "Humans",
                     AbilityScore = 1,
                     Alignment = "Neutral",
@@ -28,7 +28,7 @@ namespace DataCreation
                 };
                 Race R2 = new Race()
                 {
-                    RaceId = 2,
+                    RaceID=2,
                     Name = "Dwarves",
                     AbilityScore = 2,
                     Alignment = "Lawful Good",
@@ -38,7 +38,7 @@ namespace DataCreation
                 };
                 Race R3 = new Race()
                 {
-                    RaceId = 3,
+                    RaceID=3,
                     Name = "Elves",
                     AbilityScore = 2,
                     Alignment = "Chaotic Evil",
@@ -51,7 +51,7 @@ namespace DataCreation
                 Classes C1 = new Classes()
                 {
                     Name = "Fighter",
-                    ClassID = 1,
+                    ClassesID=1,
                     HitDice = 10,
                     FirstLevelHP = 10,
                     SavingThrow1 = "Strength",
@@ -66,7 +66,7 @@ namespace DataCreation
                 Classes C2 = new Classes()
                 {
                     Name = "Bard",
-                    ClassID = 2,
+                    ClassesID=2,
                     HitDice = 8,
                     FirstLevelHP = 8 + 1,
                     SavingThrow1 = "Dexterity",
@@ -83,7 +83,7 @@ namespace DataCreation
                 Classes C3 = new Classes()
                 {
                     Name = "Rogue",
-                    ClassID = 3,
+                    ClassesID=3,
                     HitDice = 8,
                     FirstLevelHP = 8 + 2,
                     SavingThrow1 = "Dexterity",
@@ -389,6 +389,44 @@ namespace DataCreation
 
 
                 #endregion
+                db.Races.Add(R1);
+                db.Races.Add(R2);
+                db.Races.Add(R3);
+                Console.WriteLine("DnD Races added");
+                db.Classes.Add(C1);
+                db.Classes.Add(C2);
+                db.Classes.Add(C3);
+                Console.WriteLine("Dnd Character Classes added");
+                db.Feats.Add(F1);
+                db.Feats.Add(F2);
+                db.Feats.Add(F3);
+                db.Feats.Add(F4);
+                db.Feats.Add(F5);
+                db.Feats.Add(F6);
+                db.Feats.Add(F7);
+                db.Feats.Add(F8);
+                db.Feats.Add(F9);
+                db.Feats.Add(F10);
+                db.Feats.Add(F11);
+                db.Feats.Add(F12);
+                db.Feats.Add(F13);
+                db.Feats.Add(F14);
+                db.Feats.Add(F15);
+                db.Feats.Add(F16);
+                db.Feats.Add(F17);
+                db.Feats.Add(F18);
+                db.Feats.Add(F19);
+                db.Feats.Add(F20);
+                db.Feats.Add(F21);
+                db.Feats.Add(F22);
+                db.Feats.Add(F23);
+                db.Feats.Add(F24);
+                db.Feats.Add(F25);
+                db.Feats.Add(F26);
+                db.Feats.Add(F27);
+                Console.WriteLine("DND feats added");
+                db.SaveChanges();
+                Console.WriteLine("Saved to database");
             }
         }
     }

@@ -51,6 +51,19 @@
             </TabItem>
 
             <!--#endregion-->
+            <TabItem Name="ClassFeats" Width="100" Header="Classes">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="736*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Name="Fighter"  Content="Fighter" Width="100" Grid.Column="2" Margin="10,23,626,680.4" Click="Fighter_Click"/>
+                    <Button Name="Bard"  Content="Bard" Width="100" Grid.Column="2" Margin="180,23,456,680.4" Click="Bard_Click"/>
+                    <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="2" Margin="356,23,280,680.4" Click="Rogue_Click"/>
+                    <ListBox Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

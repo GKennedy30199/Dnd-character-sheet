@@ -10,20 +10,20 @@ namespace Dnd_character_sheet
 {
     public class Race
     {
-        public int RaceId { get; set; }
+        public int RaceID { get; set; }
         public string Name { get; set; }
         public int AbilityScore { get; set; }
         public string Alignment { get; set; }
         public string Size { get; set; }
         public int Speed { get; set; }
         public string Languages { get; set; }
-        
+        public virtual List<Classes> Classes { get; set; }
 
     }
     public class Classes
     {
         public string Name { get; set; }
-        public int ClassID { get; set; }
+        public int ClassesID { get; set; }
         public int HitDice { get; set; }
         public int FirstLevelHP { get; set; }
         public string SavingThrow1 { get; set; }
@@ -42,6 +42,7 @@ namespace Dnd_character_sheet
     {
         public int FeatID { get; set; }
         public int ClassID { get; set; }
+        public virtual Classes Classes { get; set; }
         public int Level { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

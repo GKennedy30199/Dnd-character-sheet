@@ -25,6 +25,10 @@ D:\Dnd character sheet\Dnd character sheet\obj\Debug\MainWindow.baml
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.g.resources
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd_character_sheet.Properties.Resources.resources
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.GenerateResource.cache
-D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CoreCompileInputs.cache
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.exe
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.pdb
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.dll
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.xml
+D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CopyComplete
