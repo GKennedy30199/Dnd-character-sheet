@@ -32,3 +32,4 @@ D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.SqlServer.d
 D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.xml
 D:\Dnd character sheet\Dnd character sheet\bin\Debug\EntityFramework.SqlServer.xml
 D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd character sheet.csproj.CopyComplete
+D:\Dnd character sheet\Dnd character sheet\obj\Debug\Dnd_character_sheet.Migrations.InitialCreate.resources

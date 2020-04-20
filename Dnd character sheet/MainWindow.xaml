@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dnd_character_sheet"
         mc:Ignorable="d"
-        Title="Dungeons and dragons 5e survival kit" Height="800" Width="800">
+        Title="Dungeons and dragons 5e survival kit" Height="800" Width="800" Loaded="Window_Loaded">
     <Window.Background>
         <ImageBrush ImageSource="Backgrounds/DNDImage1.jpg"/>
     </Window.Background>
     <Grid Margin="0,0,-0.4,0" RenderTransformOrigin="0.499,0.553">
         <TabControl TabStripPlacement="Top">
-            <!--#endregion-->
-            <!--DiceRoller-->
+
             <!--#region DiceRoller-->
             <TabItem Name="DiceRoller" Header="DiceRoller" Width="100" Background="AliceBlue">
                 <Grid Margin="-46,0,0,0.2">
@@ -51,6 +50,7 @@
             </TabItem>
 
             <!--#endregion-->
+            <!--region FeatsList-->
             <TabItem Name="ClassFeats" Width="100" Header="Classes">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -62,6 +62,87 @@
                     <Button Name="Bard"  Content="Bard" Width="100" Grid.Column="2" Margin="180,23,456,680.4" Click="Bard_Click"/>
                     <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="2" Margin="356,23,280,680.4" Click="Rogue_Click"/>
                     <ListBox Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
+                </Grid>
+            </TabItem>
+            <!--#endregion-->
+            <TabItem Name="CharacterSheet" Width="100" Header="Character Sheet">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBox Grid.Column="0" Grid.Row="0" Text="Name:" VerticalAlignment="Stretch"/>
+                    <TextBox Grid.Column="0" Grid.Row="0" Text="Level:" VerticalAlignment="Bottom"/>
+                    <TextBox Grid.Column="0" Grid.Row="0" Text="Class:" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="SavingThrow:" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="1" Text="Strength:" FontSize="13"/>
+                    <TextBlock Grid.Column="0" Grid.Row="1" Name="TbxStrength" Background="Red" Width="100" HorizontalAlignment="Center"/>
+                    <ComboBox Grid.Column="0" Grid.Row="1" Name="CbxStrength" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="1" Name="StrengthST" HorizontalAlignment="Right" VerticalAlignment="Center" Width="60"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="2" Text="Dexterity:" FontSize="13"/>
+                    <TextBlock Grid.Column="0" Grid.Row="2" Name="TbxDex" Background="Blue" Width="100" HorizontalAlignment="Center"/>
+                    <ComboBox Grid.Column="0" Grid.Row="2" Name="CbxDex" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="2" Name="DexST" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="3" Text="Constitution:" FontSize="13"/>
+                    <TextBlock Grid.Column="0" Grid.Row="3" Name="TbxCon" Background="Green" Width="100" HorizontalAlignment="Center"/>
+                    <ComboBox Grid.Column="0" Grid.Row="3" Name="CbxCon" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="3" Name="ConSt" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="4" Text="Intelligance:" FontSize="13"/>
+                    <TextBlock Grid.Column="0" Grid.Row="4" Name="TbxInt" Background="Aqua" Width="100" HorizontalAlignment="Center"/>
+                    <ComboBox Grid.Column="0" Grid.Row="4" Name="CbxInt" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="4" Name="IntST" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="5" Text="Wisdom:" FontSize="13"/>
+                    <TextBlock Grid.Column="0" Grid.Row="5" Name="TbxWis" Width="100" Background="Beige"  HorizontalAlignment="Center"/>
+                    <ComboBox Grid.Column="0" Grid.Row="5" Name="CbxWis" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="5" Name="WisST" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="0" Grid.Row="6" Text="Charisma:" FontSize="13"/>
+                    <TextBlock Name="TbxCha" Grid.Column="0" Grid.Row="6" Background="Chocolate" Width="100" HorizontalAlignment="Center" />
+                    <ComboBox Name="CbxCha" Grid.Column="0" Grid.Row="6" Height="30" Width="80" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="0" Grid.Row="6" Name="ChaST" Width="60" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="Armour Class:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="Max HP:" VerticalAlignment="Top"  HorizontalAlignment="Center"/>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="Temp HP:" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="80" Height="90" Background="Silver" FontSize="30"/>
+                    <TextBlock Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Current HP:" FontSize="20" Height="26" Margin="50.8,0,75.6,0.4" Width="136"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="80" Height="90" Background="Pink" FontSize="30"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="80" Height="90" Background="Purple" FontSize="30"/>
+                    <TextBox Grid.Column="1" Grid.Row="2" Background="PeachPuff" FontSize="60"/>
+                    <TextBlock Grid.Column="1" Grid.Row="2" Text="Current HP" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Skills"/>
+                    <TextBlock Grid.Column="1" Grid.Row="3" Text="Acrobatics:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Column="1" Grid.Row="3" Name="Acrobatics" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Red"/>
+                    <TextBlock Grid.Column="1" Grid.Row="3" Text="AnimalHandling" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="3" Grid.Column="1" Name="AnimalHandling" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Beige"/>
+                    <TextBlock Grid.Column="1" Grid.Row="4" Text="Arcana" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="4" Grid.Column="1" Name="Arcana" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Athletics" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="4" Grid.Column="1" Name="Athletics" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Red"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Deception" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Chocolate"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Text="History" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
+                    
+
+
                 </Grid>
             </TabItem>
         </TabControl>

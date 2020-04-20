@@ -174,6 +174,22 @@ namespace Dnd_character_sheet
         {
 
         }
+
         #endregion
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] AbilityScore = { "1", "2-3", "4-5", "6-7", "8-9", "10-11", "12-13", "14-15", "16-17", "18-19", "20-21", "22-23", "24-25", "26-27", "28-29", "30" };
+            CbxStrength.ItemsSource = AbilityScore;
+            CbxDex.ItemsSource = AbilityScore;
+            CbxCon.ItemsSource = AbilityScore;
+            CbxInt.ItemsSource = AbilityScore;
+            CbxWis.ItemsSource = AbilityScore;
+            CbxCha.ItemsSource = AbilityScore;
+        }
+        public void Modifier()
+        {
+            string modifier = CbxStrength.SelectedItem as string;
+        }
     }
 }
