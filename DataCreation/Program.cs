@@ -48,7 +48,7 @@ namespace DataCreation
                 };
                 #endregion
                 #region Classes
-                Classes C1 = new Classes()
+                classes C1 = new classes()
                 {
                     Name = "Fighter",
                     ClassesID=1,
@@ -63,7 +63,7 @@ namespace DataCreation
                     Skill5 = "Perception",
                     Skill6 = "Intimidation",
                 };
-                Classes C2 = new Classes()
+                classes C2 = new classes()
                 {
                     Name = "Bard",
                     ClassesID=2,
@@ -80,7 +80,7 @@ namespace DataCreation
 
 
                 };
-                Classes C3 = new Classes()
+                classes C3 = new classes()
                 {
                     Name = "Rogue",
                     ClassesID=3,

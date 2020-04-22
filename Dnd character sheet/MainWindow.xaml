@@ -58,10 +58,12 @@
                         <ColumnDefinition Width="25*"/>
                         <ColumnDefinition Width="736*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Name="Fighter"  Content="Fighter" Width="100" Grid.Column="2" Margin="10,23,626,680.4" Click="Fighter_Click"/>
+
+                    <Button  Name="Fighter"  Content="Fighter" Width="100" Grid.Column="2" Margin="10,23,626,680.4" Click="Fighter_Click"/>
                     <Button Name="Bard"  Content="Bard" Width="100" Grid.Column="2" Margin="180,23,456,680.4" Click="Bard_Click"/>
                     <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="2" Margin="356,23,280,680.4" Click="Rogue_Click"/>
-                    <ListBox Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
+                    <Button x:Name="Human" Content="Human" Grid.Column="2" Margin="529,133,45,551.4" Click="Human_Click" Background="Aquamarine"/>
+                    <DataGrid Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
                 </Grid>
             </TabItem>
             <!--#endregion-->
@@ -130,18 +132,40 @@
                     <TextBlock Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Text="Skills"/>
                     <TextBlock Grid.Column="1" Grid.Row="3" Text="Acrobatics:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Column="1" Grid.Row="3" Name="Acrobatics" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Red"/>
-                    <TextBlock Grid.Column="1" Grid.Row="3" Text="AnimalHandling" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Column="1" Grid.Row="3" Text="AnimalHandling:" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Row="3" Grid.Column="1" Name="AnimalHandling" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Beige"/>
-                    <TextBlock Grid.Column="1" Grid.Row="4" Text="Arcana" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Column="1" Grid.Row="4" Text="Arcana:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Row="4" Grid.Column="1" Name="Arcana" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
-                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Athletics" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Athletics:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Row="4" Grid.Column="1" Name="Athletics" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Red"/>
-                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Deception" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="Deception:" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Chocolate"/>
-                    <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Text="History" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Text="History:" HorizontalAlignment="Left"/>
                     <CheckBox Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
-                    
-
+                    <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Insight:"/>
+                    <CheckBox Grid.Row="5" Grid.Column="1" Name="Insight" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Beige"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" Text="Intimidation:" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="5" Grid.Column="1" Name="Intimidation" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Chocolate"/>
+                    <TextBlock Grid.Row="6" Grid.Column="1" Text="Investigation:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="6" Grid.Column="1" Name="Investigation" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="Medicine:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="3" Grid.Column="2" Name="Medicine" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Beige"/>
+                    <TextBlock Grid.Row="3" Grid.Column="2" Text="Nature:" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="3" Grid.Column="2" Name="Nature" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="Aqua"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="Perception:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="4" Grid.Column="2" Name="Perception" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Beige"/>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="Performance:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <CheckBox Grid.Row="4" Grid.Column="2" Name="Perfomance" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Chocolate" />
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="Persuasion:" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                    <CheckBox Grid.Row="4" Grid.Column="2" Name="Persuasion" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Chocolate" />
+                    <TextBlock Grid.Row="5" Grid.Column="2" Text="Religion:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="5" Grid.Column="2" Name="Religion" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Aqua"/>
+                    <TextBlock Grid.Row="5" Grid.Column="2" Text="Sleight-Of-Hand:" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="5" Grid.Column="2" Name="Sleight" VerticalAlignment="Center" HorizontalAlignment="Center" Background="DarkBlue"/>
+                    <TextBlock Grid.Row="5" Grid.Column="2" Text="Stealth:" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="5" Grid.Column="2" Name="Stealth" VerticalAlignment="Bottom" HorizontalAlignment="Center" Background="DarkBlue"/>
+                    <TextBlock Grid.Row="6" Grid.Column="2" Text="Survival:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <CheckBox Grid.Row="6" Grid.Column="2" Name="Survival" VerticalAlignment="Top" HorizontalAlignment="Center" Background="Beige"/>
 
                 </Grid>
             </TabItem>

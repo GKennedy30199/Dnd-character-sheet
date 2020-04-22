@@ -3,6 +3,7 @@ using System.Windows;
 using System.Threading.Tasks;
 using Dnd_character_sheet;
 using System.Data;
+using System.Linq;
 namespace Dnd_character_sheet
 {
     /// <summary>
@@ -11,7 +12,12 @@ namespace Dnd_character_sheet
     public partial class MainWindow : Window
     {
         DndCharacterData db = new DndCharacterData();
-        
+       // int ModifierNum1;
+        //int ModifierNum2;
+        //int ModifierNum3;
+        //int ModifierNum4;
+        //int ModifierNum5;
+        //nt ModifierNum6;
         public MainWindow()
         {
             
@@ -160,26 +166,36 @@ namespace Dnd_character_sheet
         #region Featslist
         private void Fighter_Click(object sender, RoutedEventArgs e)
         {
-            //var query = from f in db.Classes
-              //          select f;
-            
+            var Query =
+                from F in db.Feats
+                where F.ClassID == 1
+                select F;
+            Featlist.ItemsSource = Query.ToList();
         }
 
         private void Bard_Click(object sender, RoutedEventArgs e)
         {
-
+            var Query =
+                from B in db.Feats
+                where B.ClassID == 2
+                select B;
+            Featlist.ItemsSource = Query.ToList();
         }
 
         private void Rogue_Click(object sender, RoutedEventArgs e)
         {
-
+            var Query =
+                from R in db.Feats
+                where R.ClassID == 3
+                select R;
+            Featlist.ItemsSource = Query.ToList();
         }
 
         #endregion
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            string[] AbilityScore = { "1", "2-3", "4-5", "6-7", "8-9", "10-11", "12-13", "14-15", "16-17", "18-19", "20-21", "22-23", "24-25", "26-27", "28-29", "30" };
+             string[] AbilityScore = { "1", "2-3", "4-5", "6-7", "8-9", "10-11", "12-13", "14-15", "16-17", "18-19", "20-21", "22-23", "24-25", "26-27", "28-29", "30" };
             CbxStrength.ItemsSource = AbilityScore;
             CbxDex.ItemsSource = AbilityScore;
             CbxCon.ItemsSource = AbilityScore;
@@ -187,9 +203,13 @@ namespace Dnd_character_sheet
             CbxWis.ItemsSource = AbilityScore;
             CbxCha.ItemsSource = AbilityScore;
         }
-        public void Modifier()
+
+        private void Human_Click(object sender, RoutedEventArgs e)
         {
-            string modifier = CbxStrength.SelectedItem as string;
+            var Query =
+                from H in db.Races
+                where H.RaceID == 1
+                select H;
         }
     }
 }

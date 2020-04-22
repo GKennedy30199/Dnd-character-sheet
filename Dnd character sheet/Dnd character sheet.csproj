@@ -72,6 +72,7 @@
       <DependentUpon>202004101837060_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modifier.cs" />
     <Compile Include="Race.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

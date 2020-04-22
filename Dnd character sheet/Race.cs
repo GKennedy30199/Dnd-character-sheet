@@ -17,10 +17,10 @@ namespace Dnd_character_sheet
         public string Size { get; set; }
         public int Speed { get; set; }
         public string Languages { get; set; }
-        public virtual List<Classes> Classes { get; set; }
+        public virtual List<classes> Classes { get; set; }
 
     }
-    public class Classes
+    public class classes
     {
         public string Name { get; set; }
         public int ClassesID { get; set; }
@@ -42,7 +42,7 @@ namespace Dnd_character_sheet
     {
         public int FeatID { get; set; }
         public int ClassID { get; set; }
-        public virtual Classes Classes { get; set; }
+        public virtual classes Classes { get; set; }
         public int Level { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -51,7 +51,7 @@ namespace Dnd_character_sheet
     {
         public DndCharacterData() : base("DnDdata") { }
         public DbSet<Race> Races { get; set; }
-        public DbSet<Classes> Classes { get; set; }
+        public DbSet<classes> Classes { get; set; }
         public DbSet<Feat> Feats { get; set; }
     }
 }
