@@ -14,7 +14,7 @@
 
             <!--#region DiceRoller-->
             <TabItem Name="DiceRoller" Header="DiceRoller" Width="100" Background="AliceBlue">
-                <Grid Margin="-46,0,0,0.2">
+                <Grid Margin="-46,0,0,0.2" Background="Yellow">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="27*"/>
                         <ColumnDefinition Width="25*"/>
@@ -52,7 +52,7 @@
             <!--#endregion-->
             <!--region FeatsList-->
             <TabItem Name="ClassFeats" Width="100" Header="Classes">
-                <Grid>
+                <Grid Background="Brown">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="27*"/>
                         <ColumnDefinition Width="25*"/>
@@ -64,11 +64,24 @@
                     <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="2" Margin="356,23,280,680.4" Click="Rogue_Click"/>
                     <Button x:Name="Human" Content="Human" Grid.Column="2" Margin="529,133,45,551.4" Click="Human_Click" Background="Aquamarine"/>
                     <DataGrid Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
+                    <Image Source="Classes/Barbarian.png" VerticalAlignment="Bottom" Height="256" Grid.ColumnSpan="3" Margin="27,0,626,0.4"/>
+                    <Image Source="Classes/Rogue.png" VerticalAlignment="Bottom"  RenderTransformOrigin="11.489,0.603" Grid.ColumnSpan="3" Height="207" Margin="0,0,299,0.4"/>
+                    <Image Source="Classes/Wizard.jpg" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Height="191" Margin="305,0,-471,7.4" RenderTransformOrigin="0.5,0.5" Width="902" Grid.Column="2">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-180.365"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
                 </Grid>
             </TabItem>
             <!--#endregion-->
+            <!--#region CharacterSheet-->
             <TabItem Name="CharacterSheet" Width="100" Header="Character Sheet">
-                <Grid>
+                <Grid Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
@@ -169,6 +182,20 @@
 
                 </Grid>
             </TabItem>
+            <!--#endregion-->
+            <TabItem Name="SpellsList" Header="Spells" Width="100">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="SpellBtn" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="200" Content="Load Spell" Background="Teal" Click="SpellBtn_Click"/>
+                    <DataGrid Grid.Row="2" Name="SpellsLbx"/>
+                </Grid>
+            </TabItem> 
         </TabControl>
     </Grid>
 </Window>

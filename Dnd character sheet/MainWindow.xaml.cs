@@ -12,6 +12,7 @@ namespace Dnd_character_sheet
     public partial class MainWindow : Window
     {
         DndCharacterData db = new DndCharacterData();
+        SpellsList Sp = new SpellsList();
        // int ModifierNum1;
         //int ModifierNum2;
         //int ModifierNum3;
@@ -206,10 +207,20 @@ namespace Dnd_character_sheet
 
         private void Human_Click(object sender, RoutedEventArgs e)
         {
-            var Query =
+            var query =
                 from H in db.Races
                 where H.RaceID == 1
                 select H;
+            Featlist.ItemsSource = query.ToList();
+        }
+
+        private void SpellBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var query =
+                from S in Sp.Spells
+                where S.Level ==1
+                select S;
+            SpellsLbx.ItemsSource = query.ToList();
         }
     }
 }

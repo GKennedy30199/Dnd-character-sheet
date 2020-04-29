@@ -1,0 +1,14 @@
+D:\Dnd character sheet\SpellsList\bin\Debug\SpellsList.exe.config
+D:\Dnd character sheet\SpellsList\bin\Debug\SpellsList.exe
+D:\Dnd character sheet\SpellsList\bin\Debug\SpellsList.pdb
+D:\Dnd character sheet\SpellsList\bin\Debug\Dnd character sheet.exe
+D:\Dnd character sheet\SpellsList\bin\Debug\EntityFramework.dll
+D:\Dnd character sheet\SpellsList\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dnd character sheet\SpellsList\bin\Debug\Dnd character sheet.pdb
+D:\Dnd character sheet\SpellsList\bin\Debug\Dnd character sheet.exe.config
+D:\Dnd character sheet\SpellsList\bin\Debug\EntityFramework.xml
+D:\Dnd character sheet\SpellsList\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dnd character sheet\SpellsList\obj\Debug\SpellsList.csprojAssemblyReference.cache
+D:\Dnd character sheet\SpellsList\obj\Debug\SpellsList.csproj.CopyComplete
+D:\Dnd character sheet\SpellsList\obj\Debug\SpellsList.exe
+D:\Dnd character sheet\SpellsList\obj\Debug\SpellsList.pdb
