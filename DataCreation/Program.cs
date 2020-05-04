@@ -9,6 +9,7 @@ namespace DataCreation
 {
     class Program
     {
+       //this is the database i made for the races and classes/feats
         static void Main(string[] args)
         {
             DndCharacterData db = new DndCharacterData();
@@ -17,13 +18,13 @@ namespace DataCreation
                 #region Races
                 Race R1 = new Race()
                 {
-                    RaceID=1,
-                    Name = "Humans",
-                    AbilityScore = 1,
-                    Alignment = "Neutral",
-                    Size = "5'5-6'0(medium)",
-                    Speed = 30,
-                    Languages = "English",
+                    RaceID=1,//set it apart from the others
+                    Name = "Humans", //name of the race
+                    AbilityScore = 1, //how many ability points you can apply to each stat
+                    Alignment = "Neutral",//determines if the race is good or evil(roleplay purposes)
+                    Size = "5'5-6'0(medium)",//Height of the race
+                    Speed = 30,//how fast the race is(measured in feet)
+                    Languages = "English",//what languages a race naturally knows starting out
 
                 };
                 Race R2 = new Race()
@@ -67,11 +68,11 @@ namespace DataCreation
                 {
                     Name = "Bard",
                     ClassesID=2,
-                    HitDice = 8,
-                    FirstLevelHP = 8 + 1,
-                    SavingThrow1 = "Dexterity",
-                    SavingThrow2 = "Charisma",
-                    Skill1 = "Any",
+                    HitDice = 8,//determines health
+                    FirstLevelHP = 8 + 1,// determines health at the beginning
+                    SavingThrow1 = "Dexterity",//determines what roll the class has an advantage in
+                    SavingThrow2 = "Charisma",//...
+                    Skill1 = "Any",//determines what skills a character can have(roleplay purposes)
                     Skill2 = "Any",
                     Skill3 = "Any",
                     Skill4 = "n/a",
@@ -156,11 +157,11 @@ namespace DataCreation
                 {
                     Name = "Extra Attack",
                     FeatID = 6,
-                    ClassID = 1,
-                    Level = 5,
+                    ClassID = 1,//what class the feat belongs in
+                    Level = 5,//what level you get the feat at
                     Description = "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn." +
                     "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
-
+                    //the general description of what the feat does
                 };
                 Feat F7 = new Feat()
                 {

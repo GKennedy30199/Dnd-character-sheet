@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 namespace Dnd_character_sheet
 {
+    
     public class Spells
     {
         public int SpellsID { get; set; }

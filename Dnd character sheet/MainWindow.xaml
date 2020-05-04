@@ -11,8 +11,9 @@
     </Window.Background>
     <Grid Margin="0,0,-0.4,0" RenderTransformOrigin="0.499,0.553">
         <TabControl TabStripPlacement="Top">
-
+             
             <!--#region DiceRoller-->
+            
             <TabItem Name="DiceRoller" Header="DiceRoller" Width="100" Background="AliceBlue">
                 <Grid Margin="-46,0,0,0.2" Background="Yellow">
                     <Grid.ColumnDefinitions>
@@ -51,22 +52,26 @@
 
             <!--#endregion-->
             <!--region FeatsList-->
+            
             <TabItem Name="ClassFeats" Width="100" Header="Classes">
                 <Grid Background="Brown">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="27*"/>
                         <ColumnDefinition Width="25*"/>
-                        <ColumnDefinition Width="736*"/>
+                        <ColumnDefinition Width="282*"/>
+                        <ColumnDefinition Width="454*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button  Name="Fighter"  Content="Fighter" Width="100" Grid.Column="2" Margin="10,23,626,680.4" Click="Fighter_Click"/>
-                    <Button Name="Bard"  Content="Bard" Width="100" Grid.Column="2" Margin="180,23,456,680.4" Click="Bard_Click"/>
-                    <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="2" Margin="356,23,280,680.4" Click="Rogue_Click"/>
-                    <Button x:Name="Human" Content="Human" Grid.Column="2" Margin="529,133,45,551.4" Click="Human_Click" Background="Aquamarine"/>
-                    <DataGrid Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4"/>
-                    <Image Source="Classes/Barbarian.png" VerticalAlignment="Bottom" Height="256" Grid.ColumnSpan="3" Margin="27,0,626,0.4"/>
-                    <Image Source="Classes/Rogue.png" VerticalAlignment="Bottom"  RenderTransformOrigin="11.489,0.603" Grid.ColumnSpan="3" Height="207" Margin="0,0,299,0.4"/>
-                    <Image Source="Classes/Wizard.jpg" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Height="191" Margin="305,0,-471,7.4" RenderTransformOrigin="0.5,0.5" Width="902" Grid.Column="2">
+                    <Button  Name="Fighter"  Content="Fighter" Width="100" Grid.Column="2" Margin="10,23,172.4,680.4" Click="Fighter_Click" Background="Orange"/>
+                    <Button Name="Bard"  Content="Bard" Width="100" Grid.Column="2" Margin="180,23,2.4,680.4" Click="Bard_Click" Background="Purple"/>
+                    <Button Name="Rogue"  Content="Rogue" Width="100" Grid.Column="3" Margin="73.6,23,280,680.4" Click="Rogue_Click" Background="White"/>
+                    <Button x:Name="Human" Content="Human" Grid.Column="3" Margin="258.6,107,45,535.4" Click="Human_Click" Background="Aquamarine" Width="150" Height="100"/>
+                    <Button x:Name="Dwarven" Content="Dwarf" Grid.Column="3" Click="Dwarven_Click" Width="150" Height="100" Background="Beige" Margin="258.6,213,45,429.4"/>
+                    <Button x:Name="Elven" Content="Elf" Grid.Column="3" Click="Elven_Click" Width="150" Height="100" Background="LightBlue" Margin="258.6,321,45,321.4"/>
+                    <DataGrid Name="Featlist" Grid.Column="2" Margin="0,107,263,366.4" Grid.ColumnSpan="2"/>
+                    <Image Source="Classes/Barbarian.png" VerticalAlignment="Bottom" Height="256" Grid.ColumnSpan="3" Margin="27,0,172.4,0.4"/>
+                    <Image Source="Classes/Rogue.png" VerticalAlignment="Bottom"  RenderTransformOrigin="11.489,0.603" Grid.ColumnSpan="4" Height="207" Margin="0,0,299,0.4"/>
+                    <Image Source="Classes/Wizard.jpg" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.ColumnSpan="1" Height="191" Margin="22.6,0,-471,7.4" RenderTransformOrigin="0.5,0.5" Width="902" Grid.Column="3">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -80,6 +85,7 @@
             </TabItem>
             <!--#endregion-->
             <!--#region CharacterSheet-->
+            
             <TabItem Name="CharacterSheet" Width="100" Header="Character Sheet">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
@@ -183,8 +189,11 @@
                 </Grid>
             </TabItem>
             <!--#endregion-->
-            <TabItem Name="SpellsList" Header="Spells" Width="100">
-                <Grid>
+            <!--#region SpellsList-->
+            
+            <TabItem Name="SpellsList" Header="Spells" Width="100" >
+
+                <Grid Background="LightGreen">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
@@ -195,7 +204,8 @@
                     <Button x:Name="SpellBtn" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="200" Content="Load Spell" Background="Teal" Click="SpellBtn_Click"/>
                     <DataGrid Grid.Row="2" Name="SpellsLbx"/>
                 </Grid>
-            </TabItem> 
+            </TabItem>
+            <!--#endregion-->
         </TabControl>
     </Grid>
 </Window>

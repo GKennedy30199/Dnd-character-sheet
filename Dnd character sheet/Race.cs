@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dnd_character_sheet
 {
+    
     public class Race
     {
         public int RaceID { get; set; }

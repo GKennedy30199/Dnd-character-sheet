@@ -218,9 +218,27 @@ namespace Dnd_character_sheet
         {
             var query =
                 from S in Sp.Spells
-                where S.Level ==1
                 select S;
+                
             SpellsLbx.ItemsSource = query.ToList();
+        }
+
+        private void Dwarven_Click(object sender, RoutedEventArgs e)
+        {
+            var query =
+                from D in db.Races
+                where D.RaceID == 2
+                select D;
+            Featlist.ItemsSource = query.ToList();
+        }
+
+        private void Elven_Click(object sender, RoutedEventArgs e)
+        {
+            var query =
+                from E in db.Races
+                where E.RaceID == 3
+                select E;
+            Featlist.ItemsSource = query.ToList();
         }
     }
 }

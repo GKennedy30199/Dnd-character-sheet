@@ -19,8 +19,8 @@ namespace SpellsLists
                 {
                     SpellsID = 1,
                     Name="Eldritch Blast",
-                    Level=0,
-                    CastTime="1A",
+                    Level=0,// what level you need to have the spell
+                    CastTime="1A",//how long the spell takes to cast(1A=1 action(can only be done once a turn) 1ba=1 bonus action(can be done on multiple turns) 1min=takes up the entire turn)
                     Range=120,
                     Description= "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.",
                 };
